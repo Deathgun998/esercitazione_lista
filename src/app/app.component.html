@@ -1,0 +1,6 @@
+<app-header></app-header>
+<div [ngSwitch]="currentSection">
+    <app-home *ngSwitchCase="'home'"></app-home>
+    <app-list *ngSwitchCase="'list'"></app-list>
+    <app-edit *ngSwitchCase="'edit'"></app-edit>
+</div>
